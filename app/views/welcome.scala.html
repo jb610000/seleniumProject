@@ -1,14 +1,38 @@
-@(message: String, style: String = "scala") 
+@(message: String, style: String = "scala")
 
 @defining(play.core.PlayVersion.current) { version =>
 
 <section id="top">
-  <div class="wrapper">
-    <h1><a href="https://playframework.com/documentation/@version/Home">@message</a></h1>
-  </div>
-</section>
 
-<div id="content" class="wrapper doc">
+    <body>
+            <!-- ##### Nav Bar ##### -->
+        <div class="container-fluid">
+                <!-- Top logo -->
+            <div class="row topper">
+                <div class="col-md-6 header-section">
+                    <div class="logo">
+                        <a href="/" title="Home" rel="home" style="border: medium none;"> <img height="100px" width="100px" src="http://www.seleniumeasy.com/sites/default/files/seleniumEasy_0.jpg" alt="Selenium Easy" role="presentation"> </a>
+                    </div>
+                    <div id="name-and-slogan">
+                        <div id="site-name" class="site-name"><a href="/" title="Home" rel="home">Selenium Easy</a></div>
+                        <div id="site-slogan" class="site-slogan">Complete Automation Testing Tutorials</div>
+                    </div>
+                </div>
+                <div class="top-banner col-md-6">
+                    <a href="https://crossbrowsertesting.com/?utm_source=seleniumeasy&utm_medium=da&utm_campaign=sedemo" target=”_blank”>
+                        <img class="cbt" src="http://www.seleniumeasy.com/test/img/sponsored-by-CBT.png"/></a>
+                </div>
+            </div>
+        </div>
+    <button class="tablink" >Input Forms</button>
+    <button class="tablink" >Date Pickers</button>
+    <button class="tablink" >Progress Bars</button>
+    <button class="tablink" >Alerts and models</button>
+    <button class="tablink" >List Box</button>
+    <button class="tablink" >Others</button>
+
+
+    <div id="content" class="wrapper doc">
 <article>
 
   <h1>Welcome to Play</h1>
@@ -97,17 +121,17 @@ GET     /               controllers.HomeController.index</code></pre>
 
   <p>
     For more information on the various commands you can run on Play, i.e. running tests and packaging applications for production, see <a href="https://playframework.com/documentation/@version/PlayConsole">Using the Play console</a>.
-  </p>  
+  </p>
 
   <h2>Need to set up an IDE?</h2>
 
   <p>
-      You can start hacking your application right now using any text editor. Any changes will be automatically reloaded at each page refresh, 
+      You can start hacking your application right now using any text editor. Any changes will be automatically reloaded at each page refresh,
       including modifications made to Scala source files.
   </p>
 
   <p>
-      If you want to set-up your application in <strong>IntelliJ IDEA</strong> or any other Java IDE, check the 
+      If you want to set-up your application in <strong>IntelliJ IDEA</strong> or any other Java IDE, check the
       <a href="https://www.playframework.com/documentation/@version/IDE">Setting up your preferred IDE</a> page.
   </p>
 
@@ -137,28 +161,23 @@ GET     /               controllers.HomeController.index</code></pre>
   <p>
     Gitter is a real time chat channel, like IRC. The <a href="https://gitter.im/playframework/playframework">playframework/playframework</a>  channel is used by Play users to discuss the ins and outs of writing great Play applications.
   </p>
- 
+
 </article>
 
 <aside>
-  <h3>Browse</h3>
+  <h3>Menu List</h3>
   <ul>
-    <li><a href="https://playframework.com/documentation/@version">Documentation</a></li>
-    <li><a href="https://playframework.com/documentation/@version/api/@style/index.html">Browse the @{style.capitalize} API</a></li>
+    <li><a href="https://playframework.com/documentation/@version">Date Pickers</a></li>
+      <li><a href="https://playframework.com/documentation/@version">Tables</a></li>
+      <li><a href="https://playframework.com/documentation/@version">Progess bars and sliders</a></li>
+      <li><a href="https://playframework.com/documentation/@version">Alerts and Models</a></li>
+      <li><a href="https://playframework.com/documentation/@version">List Box</a>
+  <li><a href="https://playframework.com/documentation/@version">Others</a></li>
+
+
   </ul>
-  <h3>Start here</h3>
-  <ul>
-    <li><a href="https://playframework.com/documentation/@version/PlayConsole">Using the Play console</a></li>
-    <li><a href="https://playframework.com/documentation/@version/IDE">Setting up your preferred IDE</a></li>
-    <li><a href="https://playframework.com/download#examples">Example Projects</a>
-  </ul>
-  <h3>Help here</h3>
-  <ul>
-    <li><a href="https://stackoverflow.com/questions/tagged/playframework">Stack Overflow</a></li>
-    <li><a href="https://groups.google.com/group/play-framework">Mailing List</a></li>
-    <li><a href="https://gitter.im/playframework/playframework">Gitter Channel</a></li>
-  </ul>
-  
+
+
 </aside>
 
 </div>
